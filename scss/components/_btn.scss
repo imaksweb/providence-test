@@ -1,0 +1,89 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    transition: all .3s;
+    z-index: 10;
+  }
+
+  &__icon {
+    fill: currentColor;
+       
+    &--medium {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: 0 .5rem 1rem rgba($color-black, 0.15);
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+  &--blue {
+    background-color: $color-tertiary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-tertiary;
+    }
+  }
+
+  &--dark-gray {
+    background-color: $color-secondary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  &--submit {
+    border: none;
+    cursor: pointer;
+  }
+
+  &--medium {
+    padding: 1.5rem 2rem;
+  }
+
+  &--large {
+    padding: 1.5rem 3rem;
+  }
+
+  &--animated {
+    animation: MoveInBottom 1s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
+}

@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    &, 
+    &:link, 
+    &:visited {
+      display: block;
+      color: $color-secondary;
+      text-transform: uppercase;
+      font-size: 2rem;
+      padding: 1rem;
+      transition: all .3s;
+    }
+
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+      transform: scale(1.2) rotate(-4deg);
+      background-color: $color-secondary;
+      color: $color-light-gray;
+    }
+
+    &:active {
+      box-shadow: 0 .5rem 1rem rgba($color-black, 0.15);
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

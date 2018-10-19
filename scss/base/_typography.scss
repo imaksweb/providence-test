@@ -1,0 +1,29 @@
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-primary;
+}
+
+.header {
+  font-size: 1.6rem;
+}
+
+.heading-primary {
+  font-family: $font-secondary;
+  font-size: 6.2rem;
+  font-weight: 500;
+  color: $color-secondary;
+
+  &--animated {
+    animation: MoveInLeft2 1s ease-out .8s;
+    animation-fill-mode: backwards;
+  }
+
+  @include respond(tablet-port) {
+    font-size: 5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,36 @@
+/*
+
+MEDIA QUERIES
+
+0-600px:      Phones
+600-900px:    Tablets portrait mode
+900-1200px:   Tablets landscape mode
+1200-1800px:  Desktops (normal styles)
+1800px+:      Big desktops
+
+$breakpoint argument choices:
+- phone
+- tablet-port
+- tablet-land
+- desktop-big
+
+ORDER: Base + typography > general layout(grid-header-navigation-footer) > page layout (home) > components(composition)
+
+1em = 16px
+
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) { @content; }    // 600px
+  }
+  @if $breakpoint == tablet-port {
+    @media only screen and (max-width: 56.25em) { @content; }   // 900px
+  }
+  @if $breakpoint == tablet-land {
+    @media only screen and (max-width: 75em) { @content; }      // 1200px
+  }
+  @if $breakpoint == desktop-big {
+    @media only screen and (min-width: 121.25em) { @content; }   // 1940px+
+  }
+}

@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  padding: 5rem 0 0;
+  margin-bottom: 8rem;
+
+  &__col {
+    display: flex;
+  }
+
+  &__main-menu, 
+  &__secondary-menu {
+    flex: 0 0 26%;
+
+    @include respond(tablet-land) {
+      flex: 0 0 30%;
+    }
+
+    @include respond(tablet-port) {
+      display: none;
+    }
+  }
+
+  &__main-menu {
+    animation: MoveInLeft 1s ease-out;
+  }
+
+  &__logo {
+    flex: 1;
+    justify-content: center;
+    animation: MoveInTop 1s ease-out;
+  }
+
+  &__secondary-menu {
+    justify-content: space-between;
+    align-items: center;
+    animation: MoveInRight 1s ease-out;
+  }
+}
