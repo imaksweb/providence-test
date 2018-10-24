@@ -97,7 +97,8 @@ body {
   font-family: "Varela Round";
   font-size: 6.2rem;
   font-weight: 500;
-  color: #26272d; }
+  color: #26272d;
+  margin-bottom: 4rem; }
   .heading-primary--animated {
     animation: MoveInLeft2 1s ease-out .8s;
     animation-fill-mode: backwards; }
@@ -464,6 +465,8 @@ body {
   background-size: cover;
   background-position: bottom;
   position: relative; }
+  .section-intro__text-box {
+    text-align: center; }
   .section-intro__img-box {
     position: absolute;
     bottom: 0;
@@ -481,7 +484,7 @@ body {
   .section-intro__paragraph {
     font-size: 2rem;
     width: 67%;
-    margin: 0 auto; }
+    margin: 0 auto 6rem; }
     @media only screen and (max-width: 75em) {
       .section-intro__paragraph {
         width: 90%; } }

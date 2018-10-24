@@ -13,6 +13,7 @@ body {
   font-size: 6.2rem;
   font-weight: 500;
   color: $color-secondary;
+  margin-bottom: 4rem;
 
   &--animated {
     animation: MoveInLeft2 1s ease-out .8s;
