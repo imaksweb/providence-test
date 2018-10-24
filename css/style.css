@@ -88,6 +88,7 @@ a {
 body {
   font-family: "Lato";
   font-weight: 400;
+  line-height: 1.4;
   color: #8c8f94; }
 
 .header {
@@ -98,7 +99,7 @@ body {
   font-size: 6.2rem;
   font-weight: 500;
   color: #26272d;
-  margin-bottom: 4rem; }
+  margin-bottom: 3rem; }
   .heading-primary--animated {
     animation: MoveInLeft2 1s ease-out .8s;
     animation-fill-mode: backwards; }
@@ -109,14 +110,11 @@ body {
     .heading-primary {
       font-size: 4rem; } }
 
-.u-text-center {
-  text-align: center !important; }
-
-.u-mb-medium {
-  margin-bottom: 4rem !important; }
-
-.u-mb-big {
-  margin-bottom: 6rem !important; }
+.paragraph {
+  font-size: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph {
+      font-size: 1.8rem; } }
 
 @keyframes MoveInLeft {
   0% {
@@ -482,16 +480,14 @@ body {
         width: 32rem;
         height: 40rem; } }
   .section-intro__paragraph {
-    font-size: 2rem;
     width: 67%;
-    margin: 0 auto 6rem; }
+    margin: 0 auto 5rem; }
     @media only screen and (max-width: 75em) {
       .section-intro__paragraph {
         width: 90%; } }
     @media only screen and (max-width: 37.5em) {
       .section-intro__paragraph {
-        width: 95%;
-        font-size: 1.8rem; } }
+        width: 95%; } }
     .section-intro__paragraph--animated {
       animation: MoveInRight2 1s ease-out .8s;
       animation-fill-mode: backwards; }

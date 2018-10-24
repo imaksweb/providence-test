@@ -30,9 +30,8 @@
   }
 
   &__paragraph {
-    font-size: 2rem;
     width: 67%;
-    margin: 0 auto 6rem;
+    margin: 0 auto 5rem;
 
     @include respond(tablet-land) {
       width: 90%;
@@ -40,7 +39,6 @@
 
     @include respond(phone) {
       width: 95%;
-      font-size: 1.8rem;
     }
 
     &--animated {
