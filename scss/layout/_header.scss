@@ -3,6 +3,10 @@
   padding: 5rem 0 0;
   margin-bottom: 8rem;
 
+  @include respond(tablet-land) {
+    padding: 5rem 2.5% 0;
+  }
+
   &__col {
     display: flex;
   }
