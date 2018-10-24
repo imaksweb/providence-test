@@ -253,13 +253,16 @@ body {
     margin-right: 1rem; }
 
 .btn:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
 .btn:active, .btn:focus {
-  outline: none;
+  outline: none; }
+
+.btn:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
 .btn::after {
