@@ -79,6 +79,7 @@ a {
 
 .container {
   max-width: 117rem;
+  width: 100%;
   margin: 0 auto; }
 
 ::selection {
@@ -463,12 +464,18 @@ body {
 .section-intro {
   width: 100%;
   height: 100vh;
-  min-height: 90rem;
+  min-height: 100rem;
   background-color: #ededee;
   background-image: url(../img/intro-bg.jpg);
   background-size: cover;
   background-position: bottom;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section-intro {
+      height: 100rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-intro {
+      height: 72rem; } }
   .section-intro__text-box {
     text-align: center; }
   .section-intro__img-box {

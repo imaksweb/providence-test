@@ -8,95 +8,100 @@
   <title>New Providence | Тренировочный сайт</title>
 </head>
 <body>
+  <div class="wrapper">
 
-  <!-- Гамбургер меню -->
-  <div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-    <label for="navi-toggle" class="navigation__button">
-      <span class="navigation__icon"></span>
-    </label>
-    <div class="navigation__background"></div>
+    <!-- ГАМБУРГЕР МЕНЮ -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__background"></div>
+    
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Tour</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Features</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Pricing</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Help</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
 
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Tour</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Features</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Pricing</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Help</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <section class="section-intro">
-    <div class="container">
-      <header class="header">
-        <div class="header__col header__main-menu">
-          <nav class="nav">
-            <svg class="nav__icon">
-              <use xlink:href="img/sprite.svg#icon-menu"></use>
-            </svg>
-            <ul class="menu">
+    <!-- SECTION INTRO -->
+    <section class="section-intro">
+      <div class="container">
+        <header class="header">
+          <div class="header__col header__main-menu">
+            <nav class="nav">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Tour</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Features</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Pricing</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__col header__logo">
+            <div class="logo">
+              <a href="#" class="logo__link"><span>New</span>Providence</a>
+            </div>
+          </div>
+          <div class="header__col header__secondary-menu">
+            <ul class="menu secondary-menu">
               <li class="menu__item">
-                <a href="#" class="menu__link">Tour</a>
+                <a href="#" class="menu__link">Help</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Features</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Pricing</a>
+                <a href="#" class="menu__link">Contacts</a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <div class="header__col header__logo">
-          <div class="logo">
-            <a href="#" class="logo__link"><span>New</span>Providence</a>
+            <button class="btn btn--medium btn--submit btn--blue">
+              <svg class="btn__icon btn__icon--medium">
+                <use xlink:href="img/sprite.svg#icon-download"></use>
+              </svg>
+              Get App
+            </button>
           </div>
-        </div>
-        <div class="header__col header__secondary-menu">
-          <ul class="menu secondary-menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Help</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Contacts</a>
-            </li>
-          </ul>
-          <button class="btn btn--medium btn--submit btn--blue">
+        </header>
+  
+        <div class="section-intro__text-box">
+          <h1 class="heading-primary heading-primary--animated">What happens tomorrow?</h1>
+          <p class="paragraph section-intro__paragraph section-intro__paragraph--animated">
+            The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
+          </p>
+          <a href="#" class="btn btn--large btn--dark-gray btn--animated">
             <svg class="btn__icon btn__icon--medium">
-              <use xlink:href="img/sprite.svg#icon-download"></use>
+              <use xlink:href="img/sprite.svg#icon-controller-play"></use>
             </svg>
-            Get App
-          </button>
+            Watch Video
+          </a>
         </div>
-      </header>
-
-      <div class="section-intro__text-box">
-        <h1 class="heading-primary heading-primary--animated">What happens tomorrow?</h1>
-        <p class="paragraph section-intro__paragraph section-intro__paragraph--animated">
-          The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
-        </p>
-        <a href="#" class="btn btn--large btn--dark-gray btn--animated">
-          <svg class="btn__icon btn__icon--medium">
-            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
-          </svg>
-          Watch Video
-        </a>
       </div>
-    </div>
-
-    <div class="section-intro__img-box"></div>
-  </section>
+  
+      <div class="section-intro__img-box"></div>
+    </section> 
+    <!-- SECTION INTRO END -->
+  </div>
 </body>
 </html>
